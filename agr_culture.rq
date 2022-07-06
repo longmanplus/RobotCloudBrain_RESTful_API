@@ -1,0 +1,21 @@
+#+ endpoint: http://10.5.27.50:7200/repositories/AsianGameKB
+#+ endpoint_in_url: False
+#+ description: list all subjects and objects of culture relations 
+
+# Asiagame prefixes
+PREFIX agr: <http://asiangame.com/resource/>
+
+select ?s ?o ?urio where { 
+	?s agr:culture ?o .
+    
+    BIND(STR(?o) AS ?stro).
+    #FILTER(REGEX(?stro, "%20")).
+    BIND(REPLACE(?stro, "%20", " ") AS ?reo).
+    
+    BIND(REPLACE(?reo, "%5B", "[") AS ?reoo).
+    BIND(REPLACE(?reoo, "%5D", "]") AS ?reooo).
+    
+    BIND(REPLACE(?reooo, "%25", "%") AS ?re).
+
+    BIND(URI(?re) AS ?urio).
+}
