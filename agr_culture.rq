@@ -1,4 +1,4 @@
-#+ endpoint: http://localhost:7200/repositories/Testing
+#+ endpoint: http://127.0.0.1:7200/repositories/Testing
 #+ endpoint_in_url: False
 #+ description: list all subjects and objects of culture relations 
 
