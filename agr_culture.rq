@@ -1,19 +1,12 @@
-#+ endpoint: http://127.0.0.1:7200/repositories/Testing
+#+ endpoint: http://dbpedia.org/sparql
 
-# Asiagame prefixes
-PREFIX agr: <http://asiangame.com/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-select ?s ?o ?urio where { 
-	?s agr:culture ?o .
-    
-    BIND(STR(?o) AS ?stro).
-    #FILTER(REGEX(?stro, "%20")).
-    BIND(REPLACE(?stro, "%20", " ") AS ?reo).
-    
-    BIND(REPLACE(?reo, "%5B", "[") AS ?reoo).
-    BIND(REPLACE(?reoo, "%5D", "]") AS ?reooo).
-    
-    BIND(REPLACE(?reooo, "%25", "%") AS ?re).
-
-    BIND(URI(?re) AS ?urio).
-}
+SELECT ?band_label { 
+    ?band rdf:type dbo:Band ;
+          dbo:genre dbr:Hard_Rock ;
+          rdfs:label ?band_label .
+} ORDER BY ?band_label
