@@ -1,12 +1,5 @@
-#+ endpoint: http://dbpedia.org/sparql
+#+ endpoint: http://127.0.0.1:7200/repositories/Testing
 
-PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX dbr: <http://dbpedia.org/resource/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-SELECT ?band_label { 
-    ?band rdf:type dbo:Band ;
-          dbo:genre dbr:Hard_Rock ;
-          rdfs:label ?band_label .
-} ORDER BY ?band_label
+select ?o where { 
+	?s ?p ?o .
+} limit 100 
