@@ -1,0 +1,19 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名查询项目开始日期
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?changeeventimestr WHERE {
+
+    ?project foaf:name ?_projectName ;
+             org:changedBy ?ChangeEvent .
+
+    ?ChangeEvent a org:Kickoff ;
+                 prov:atTime ?ChangeEventime .
+
+    BIND(STR(?ChangeEventime) AS ?changeeventimestr) .
+}

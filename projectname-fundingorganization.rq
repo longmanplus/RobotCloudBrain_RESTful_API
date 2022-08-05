@@ -1,0 +1,16 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名查询项目资金提供机构
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX poap: <http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
+
+select ?orgname where {
+    ?project foaf:name ?_projectName .
+
+    ?funding poap:beFundedTo ?project ;
+             poap:beFundedBy ?org .
+
+    ?org foaf:name ?orgname .
+}

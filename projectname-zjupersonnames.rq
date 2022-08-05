@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和单位名查询参与者的名字
+#+ description: 由项目名和单位名(浙江大学)查询参与者的名字
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
@@ -16,6 +16,6 @@ SELECT DISTINCT ?personname WHERE {
 
     ?org org:hasMember ?person ;
          a org-lab:NonprofitEntity ;
-         foaf:name ?_organizationName .
+         foaf:name "浙江大学" .
 
 }

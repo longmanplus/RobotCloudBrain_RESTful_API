@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和某参与者名查询参与者的研究方向名称
+#+ description: 由项目名和某参与者名(李铁风)查询参与者的研究方向名称
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
@@ -12,7 +12,7 @@ SELECT DISTINCT ?discipinename WHERE {
     ?project foaf:name ?_projectName ;
              org:hasMember ?person .
 
-    ?person foaf:name ?_personName ;
+    ?person foaf:name "李铁风" ;
             poap:focusOn ?discipline .
 
     ?focusOn foaf:name ?discipinename .

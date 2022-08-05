@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和学历/学位查询参与者的名字
+#+ description: 由项目名和"硕士研究生"查询参与者的名字
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
@@ -20,5 +20,5 @@ SELECT DISTINCT ?personname WHERE {
 
     ?graduation poap:GraduationAward ?graduationAward.
 
-    ?graduationAward foaf:name ?_graduationAwardName.
+    ?graduationAward foaf:name "硕士研究生" .
 }
