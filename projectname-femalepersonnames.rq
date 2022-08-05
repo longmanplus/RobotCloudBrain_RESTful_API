@@ -17,6 +17,6 @@ SELECT ?personname WHERE {
 
     BIND(strafter(str(?gender),"#") as ?gendername) .
 
-    FILTER(?gendername=?"女") .
+    FILTER(?gendername="女") .
 
 }
