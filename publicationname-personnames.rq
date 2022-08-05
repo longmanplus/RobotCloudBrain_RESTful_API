@@ -1,0 +1,16 @@
+#+ endpoint_in_url: False
+#+ description: 由文章名(title)查询全部作者名字
+
+
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX irobot:  <http://purl.org/zhejianglab/irobot-center/ontologies/irobot#>
+PREFIX poap:    <http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
+
+select distinct ?personname WHERE {
+
+    ?result foaf:name ?_AcademicPublicationName ;
+            a poap:AcademicPublication .
+
+	  ?person foaf:name ?personname ;
+            poap:hasResult ?result .
+}

@@ -1,0 +1,24 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名称查询所有参与者的性别分布
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX org:   <http://www.w3.org/ns/org#>
+PREFIX poap:  <http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
+
+SELECT ?num_per_gendername WHERE
+{
+    bind(concat(str(?gendernum),str(?gendername)) as ?num_per_gendername)
+
+    {
+    	SELECT ?gendername (count(?gendername) as ?gendernum) WHERE {
+    		?project foaf:name ?_projectName;
+             		org:hasMember ?person.
+    		?person foaf:name ?personname;
+            		poap:hasGender ?gender.
+    		bind(strafter(str(?gender),"#") as ?gendername).
+		}
+    	GROUP BY ?gendername
+    }
+}
