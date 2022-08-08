@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由文章名(title)查询全部作者名字
+#+ description: 由文章名(title)查询全部作者名字。模板：文章作者都有谁。
 
 
 PREFIX foaf:    <http://xmlns.com/foaf/0.1/>

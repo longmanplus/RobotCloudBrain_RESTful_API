@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询项目造的机器人的下潜深度
+#+ description: 由项目名称查询项目造的机器人的下潜深度。模板：制作的深海机器人的下潜深度是多少。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

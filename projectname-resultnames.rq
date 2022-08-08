@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有成果名称
+#+ description: 由项目名称查询所有成果名称。模板：项目成果有哪些。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
@@ -8,7 +8,7 @@ PREFIX poap: 	<http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
 
 SELECT ?resultstr WHERE {
 
-    ?project foaf:name ?_projectName ; 
+    ?project foaf:name ?_projectName ;
              poap:hasResult ?result .
 
     ?result foaf:name ?resultstr .

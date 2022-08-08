@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有参与者的研究方向
+#+ description: 由项目名称查询所有参与者的研究方向。模板：参与者研究方向都是什么。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

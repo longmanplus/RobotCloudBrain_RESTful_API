@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询项目造的机器人采用了什么材料
+#+ description: 由项目名称查询项目造的机器人采用了什么材料。模板：制作的深海机器人的材料是什么。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

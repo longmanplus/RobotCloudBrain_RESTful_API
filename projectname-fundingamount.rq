@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名查询项目资金量
+#+ description: 由项目名查询项目资金量。模板：资金量是多少。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

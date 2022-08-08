@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有参与者的性别分布
+#+ description: 由项目名称查询所有参与者的性别分布。模板：参与者中男女各有几个。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

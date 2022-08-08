@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有参与者的职位
+#+ description: 由项目名称查询所有参与者的职位。模板：参与人都是什么职位。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

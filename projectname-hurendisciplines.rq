@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和某参与者名("胡任")查询参与者的研究方向名称
+#+ description: 由项目名和某参与者名("胡任")查询参与者的研究方向名称。模板：参与者胡任的研究方向是什么。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

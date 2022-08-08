@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有参与者的年龄
+#+ description: 由项目名称查询所有参与者的年龄。模板：参与者年龄都是多少。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

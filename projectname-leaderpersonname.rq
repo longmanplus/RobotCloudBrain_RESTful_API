@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 项目参与者的角色(负责人是谁)
+#+ description: 项目参与者的角色(负责人的名字)。模板：负责人是谁。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

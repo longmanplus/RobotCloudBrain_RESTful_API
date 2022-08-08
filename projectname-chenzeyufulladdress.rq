@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和某参与者名查询参与者的完整地址
+#+ description: 由项目名和某参与者名(陈泽宇)查询参与者的完整地址。 模板：项目参与者陈泽宇的完整地址是什么。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
@@ -13,7 +13,7 @@ SELECT DISTINCT ?fullAddress WHERE {
              org:hasMember ?person .
 
     ?person locn:address ?address ;
-            foaf:name ?_personname .
+            foaf:name "陈泽宇" .
 
     ?address locn:fullAddress ?fullAddress .
 

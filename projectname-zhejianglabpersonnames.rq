@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和单位名(之江实验室)查询参与者的名字
+#+ description: 由项目名和单位名(之江实验室)查询参与者的名字。模板：之江实验室的参与者有哪些。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

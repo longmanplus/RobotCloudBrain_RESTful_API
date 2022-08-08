@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名称查询所有在此项目上发表文章的人名
+#+ description: 由项目名称查询所有在此项目上发表文章的人名。模板：发表项目文章的有哪些人。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 

@@ -1,0 +1,21 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名和某参与者名查询参与者的单位名称。 模板：项目参与者朱世强的单位名称是什么。
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX org-lab: <http://purl.org/zhejianglab/irobot-center/ontologies/org-lab#>
+
+SELECT DISTINCT ?orgname WHERE {
+
+    ?project foaf:name ?_projectName ;
+             org:hasMember ?person .
+
+            foaf:name "朱世强" .
+
+    ?org org:hasMember ?person ;
+         a org-lab:NonprofitEntity ;
+         foaf:name ?orgname .
+
+}
