@@ -1,0 +1,19 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名称查询所有参与者的年龄。模板：参与者年龄都是多少。
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX org:   <http://www.w3.org/ns/org#>
+PREFIX poap:  <http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
+
+SELECT DISTINCT ?personage WHERE {
+
+    ?project foaf:name ?_projectName ;
+             org:hasMember ?person .
+
+    ?person poap:age ?personage1 .
+
+    bind(str(?personage1) as ?personage) .
+
+}

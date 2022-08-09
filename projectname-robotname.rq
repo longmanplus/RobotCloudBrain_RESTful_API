@@ -1,0 +1,16 @@
+#+ endpoint_in_url: False
+#+ description: 由项目名称查询项目造的机器人的名字。模板：制作的深海机器人叫什么。
+#+ defaults:
+#+   - projectName: "深海软体机器智能驱动技术"
+
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?robotname where {
+
+	?project foaf:name ?_projectName .
+
+    ?robot foaf:maker ?project;
+           foaf:name ?robotname.
+
+}
