@@ -16,6 +16,6 @@ SELECT DISTINCT ?discipinename WHERE {
     ?person foaf:name ?_projectMemberName ;
             poap:focusOn ?discipline .
 
-    ?focusOn foaf:name ?discipinename .
+    ?discipline foaf:name ?discipinename .
 
 }
