@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名查询项目开始日期。模板：在什么日期完成的。
+#+ description: 由项目名查询项目完成日期。模板：在什么日期完成的。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 
