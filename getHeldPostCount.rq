@@ -1,4 +1,4 @@
-#+ endpoint: http://10.5.27.50:7200/repositories/RobotBrainKB
+#+ endpoint_in_url: False
 
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
