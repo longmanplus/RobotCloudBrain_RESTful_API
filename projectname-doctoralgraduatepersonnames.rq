@@ -18,7 +18,7 @@ SELECT DISTINCT ?personname WHERE {
 
             foaf:name ?personname.
 
-    ?graduation poap:GraduationAward ?graduationAward.
+    ?graduation bob:graduationAward ?graduationAward.
 
     ?graduationAward foaf:name "博士研究生" .
 }

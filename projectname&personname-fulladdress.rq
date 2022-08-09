@@ -2,6 +2,7 @@
 #+ description: 由项目名和某参与者名查询参与者的完整地址。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
+#+   - personName: "梁艺鸣"
 
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX org: <http://www.w3.org/ns/org#>
@@ -13,7 +14,7 @@ SELECT DISTINCT ?fullAddress WHERE {
              org:hasMember ?person .
 
     ?person locn:address ?address ;
-            foaf:name ?_personname .
+            foaf:name ?_personName .
 
     ?address locn:fullAddress ?fullAddress .
 

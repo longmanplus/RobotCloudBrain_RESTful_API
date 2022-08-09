@@ -15,7 +15,7 @@ SELECT ?personname WHERE {
     ?person foaf:name ?personname;
             poap:hasGender ?gender.
 
-    BIND(strafter(str(?gender),"#") as ?gendername) .
+    BIND(strafter(str(?gender),"#") AS ?gendername) .
 
     FILTER(?gendername="女") .
 

@@ -2,11 +2,11 @@
 #+ description: 由项目名和某参与者名查询参与者的学位/学历名称
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
+#+   - personName: "李铁风"
 
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX org:  <http://www.w3.org/ns/org#>
 PREFIX bob:  <http://purl.org/zhejianglab/irobot-center/ontologies/bob#>
-PREFIX poap: <http://purl.org/zhejianglab/irobot-center/ontologies/poap#>
 
 SELECT DISTINCT ?graduationAwardname WHERE {
 
@@ -16,7 +16,7 @@ SELECT DISTINCT ?graduationAwardname WHERE {
     ?person bob:hasGraduation ?graduation ;
             foaf:name ?_personName .
 
-    ?graduation bob:GraduationAward ?graduationAward .
+    ?graduation bob:graduationAward ?graduationAward .
 
     ?graduationAward foaf:name ?graduationAwardname .
 
