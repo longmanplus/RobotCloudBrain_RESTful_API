@@ -12,5 +12,6 @@ select distinct ?personname WHERE {
             a poap:AcademicPublication .
 
 	  ?person foaf:name ?personname ;
+             a foaf:Person;
             poap:hasResult ?result .
 }

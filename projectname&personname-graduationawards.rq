@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和某参与者名查询参与者的学位/学历名称
+#+ description: 由项目名和某参与者名查询参与者的学位/学历名称。模板：项目中某参与者的学历学位是什么。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 #+   - personName: "李铁风"

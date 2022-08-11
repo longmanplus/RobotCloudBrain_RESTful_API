@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 职位为某某的项目参与者的都有谁
+#+ description: 职位为某某的项目参与者的都有谁。 模板：项目参与者中担任某职位的人叫什么名字。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 #+   - postName: "工程专员"

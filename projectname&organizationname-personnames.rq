@@ -1,5 +1,5 @@
 #+ endpoint_in_url: False
-#+ description: 由项目名和机构名查询参与者的名字。模板：某机构的项目参与者有哪些。
+#+ description: 由项目名和机构名查询参与者的名字。模板：项目中某机构有哪些成员参与。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
 #+   - orgName: "之江实验室"
