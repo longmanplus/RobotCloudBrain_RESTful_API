@@ -1,9 +1,4 @@
-
 #+ endpoint: http://10.5.27.50:7200/repositories/GuideRobotKB
-
-#+ defaults:
-#+   - projectName: "深海软体机器智能驱动技术"
-#+   - orgName: "之江实验室"
 
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX org: <http://www.w3.org/ns/org#>
