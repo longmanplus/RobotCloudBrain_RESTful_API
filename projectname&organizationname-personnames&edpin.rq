@@ -1,4 +1,4 @@
-#+ endpoint: http://10.5.27.50:7200/repositories/GuideRobotKB
+#+ endpoint_in_url: http://10.5.27.50:7200/repositories/GuideRobotKB
 #+ description: 由项目名和机构名查询参与者的名字。模板：项目中某机构有哪些成员参与。
 #+ defaults:
 #+   - projectName: "深海软体机器智能驱动技术"
